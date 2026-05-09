@@ -1,4 +1,4 @@
-# NomosIQ ⚖️
+# NomosIQ 
 **AI-Powered Legal Intelligence for India**
 
 NomosIQ is a professional legal platform designed to simplify complex Indian laws for citizens and professionals alike. It uses state-of-the-art AI to analyze legal documents, explain rights, and provide instant legal information.
