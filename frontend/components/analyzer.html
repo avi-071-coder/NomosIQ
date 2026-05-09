@@ -1,0 +1,53 @@
+<div class="analyzer-container">
+    <div class="back-nav">
+        <button class="btn-back" onclick="app.goBack()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+    <div class="analyzer-layout">
+        <!-- Left Side: Input -->
+        <div class="analyzer-box">
+            <form class="analyzer-form">
+                <div class="analyzer-tabs">
+                    <button type="button" class="a-tab active" data-tab="text">Paste Document Text</button>
+                    <button type="button" class="a-tab" data-tab="url">Analyze by URL</button>
+                    <button type="button" class="a-tab" data-tab="file">Upload File/Image</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" data-tab="text">
+                        <textarea class="analyzer-textarea" name="content" placeholder="Paste your legal document here..."></textarea>
+                    </div>
+                    <div class="tab-pane" data-tab="url">
+                        <input type="url" class="analyzer-textarea" style="height: auto;" name="url" placeholder="https://example.com/legal-doc.pdf">
+                    </div>
+                    <div class="tab-pane" data-tab="file">
+                        <input type="file" class="analyzer-textarea" style="height: auto;" name="file" accept="image/*,.pdf,text/plain">
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: -1rem; margin-bottom: 1rem;">Supports images (OCR), PDFs, text files</p>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">
+                        Analyze Document
+                    </button>
+                    <button type="button" class="btn-dark">
+                        Load Recent
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Right Side: Analysis Overview -->
+        <div class="overview-panel">
+            <h2>Analysis Overview</h2>
+            
+            <div id="analyzer-results">
+                <!-- Initial Empty State -->
+                <div style="color: var(--text-secondary); font-style: italic;">
+                    Submit a document to see the clause review and key summary here.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomosIQ - AI Legal Intelligence for India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="NomosIQ Logo" class="logo-img">
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-page="dashboard">
+                    <i class="fas fa-home"></i> Dashboard
+                </button>
+                <button class="nav-btn" data-page="analyzer">
+                    <i class="fas fa-file-contract"></i> Analyzer
+                </button>
+                <button class="nav-btn" data-page="chat">
+                    <i class="fas fa-comments"></i> LegalChat
+                </button>
+                <button class="nav-btn" data-page="explorer">
+                    <i class="fas fa-search"></i> Explorer
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        <i class="fas fa-info-circle"></i>
+        This platform provides informational assistance, not legal advice. Consult a qualified lawyer.
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section id="dashboard" class="page active">
+            <div class="container">
+                <h1 class="hero-title">AI-Powered <span class="text-gold">Legal Intelligence</span></h1>
+                <p class="hero-text">Simplify complex legal documents, explore Indian laws, and get instant guidance.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card" data-page="analyzer">
+                        <i class="fas fa-file-contract"></i>
+                        <h3>Document Analyzer</h3>
+                        <p>Upload, paste, or link any legal document for instant analysis</p>
+                    </div>
+                    <div class="feature-card" data-page="chat">
+                        <i class="fas fa-comments"></i>
+                        <h3>LegalChat AI</h3>
+                        <p>Your 24/7 legal assistant for questions and guidance</p>
+                    </div>
+                    <div class="feature-card" data-page="explorer">
+                        <i class="fas fa-search"></i>
+                        <h3>Law Explorer</h3>
+                        <p>Search BNS, Constitution, rights & procedures</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pages will be loaded dynamically -->
+    </main>
+    </main>
+
+    <!-- Help Chat Widget -->
+    <div class="help-chat-widget" onclick="app.loadPage('chat')" style="position: fixed; bottom: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.9); color: #1e293b; padding: 0.75rem 1.5rem; border-radius: 999px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; font-weight: 500; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: all 0.3s; font-family: var(--font-body);">
+        <i class="fas fa-comment-dots" style="font-size: 1.2rem;"></i>
+        <span>Help Chat</span>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+</html>

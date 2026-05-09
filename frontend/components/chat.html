@@ -1,0 +1,35 @@
+<div class="chat-page" style="max-width: 900px; margin: 0 auto; text-align: center; padding-top: 2rem;">
+    <div class="back-nav" style="justify-content: flex-start;">
+        <button class="btn-back" onclick="app.goBack()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+    <h1 style="font-size: 3rem; margin-bottom: 1rem; font-family: var(--font-heading);"><span class="text-gold">LegalChat</span> AI</h1>
+    <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem;">Your 24/7 AI legal assistant. Ask anything about Indian laws.</p>
+    
+    <div class="chat-container" style="background: transparent; border: none; box-shadow: none; height: auto;">
+        <div class="chat-messages" style="text-align: left; max-height: 500px; overflow-y: auto; padding: 0 1rem; margin-bottom: 2rem; display: flex; flex-direction: column;"></div>
+        
+        <div class="chat-input search-input-wrapper" style="max-width: 800px; margin: 0 auto; padding: 0; border: none; display: block;">
+            <input type="text" class="search-input" placeholder="Ask me anything about laws, rights, or legal situations..." style="padding-right: 4rem;">
+            <button class="send-btn" style="position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%); background: transparent; border: none; color: var(--accent-gold); font-size: 1.2rem; cursor: pointer;"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <div class="suggested-questions" style="margin-top: 3rem; border: none;">
+        <div class="rights-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+            <div class="right-item suggestion-btn" style="background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; display: flex; flex-direction: column; justify-content: center;">
+                <i class="fas fa-gavel" style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 0.5rem;"></i>
+                <span style="font-size: 0.95rem;">Is this a cognizable offence?</span>
+            </div>
+            <div class="right-item suggestion-btn" style="background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; display: flex; flex-direction: column; justify-content: center;">
+                <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 0.5rem;"></i>
+                <span style="font-size: 0.95rem;">Rights during arrest</span>
+            </div>
+            <div class="right-item suggestion-btn" style="background: var(--bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; display: flex; flex-direction: column; justify-content: center;">
+                <i class="fas fa-file-contract" style="font-size: 1.5rem; color: var(--accent-gold); margin-bottom: 0.5rem;"></i>
+                <span style="font-size: 0.95rem;">How to file FIR online?</span>
+            </div>
+        </div>
+    </div>
+</div>

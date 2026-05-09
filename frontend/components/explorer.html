@@ -1,0 +1,54 @@
+<div class="explorer-container">
+    <div class="back-nav">
+        <button class="btn-back" onclick="app.goBack()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+    <div class="search-section">
+        <div class="search-input-wrapper">
+            <input type="text" class="search-input" placeholder="Search BNS sections, Articles, rights...">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+    
+    <div class="static-explorer-content">
+        <div class="panels-grid">
+            <div class="panel">
+                <h2>Legal Resources</h2>
+                <ul class="resources-list">
+                    <li onclick="app.searchExplorer('Indian Constitution')">Indian Constitution</li>
+                    <li onclick="app.searchExplorer('Bharatiya Nyaya Sanhita (BNS)')">Bharatiya Nyaya Sanhita (BNS)</li>
+                    <li onclick="app.searchExplorer('Fundamental Rights')">Fundamental Rights</li>
+                    <li onclick="app.searchExplorer('Fundamental Duties')">Fundamental Duties</li>
+                </ul>
+            </div>
+            
+            <div class="panel">
+                <h2>Quick Rights Guide</h2>
+                <div class="rights-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="right-item" onclick="app.searchExplorer('Right to Equality')">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Right to Equality</span>
+                    </div>
+                    <div class="right-item" onclick="app.searchExplorer('Right to Freedom')">
+                        <i class="fas fa-dove"></i>
+                        <span>Right to Freedom</span>
+                    </div>
+                    <div class="right-item" onclick="app.searchExplorer('Right Against Exploitation')">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Right Against Exploitation</span>
+                    </div>
+                    <div class="right-item" onclick="app.searchExplorer('Freedom of Religion')">
+                        <i class="fas fa-praying-hands"></i>
+                        <span>Freedom of Religion</span>
+                    </div>
+                    <div class="right-item" onclick="app.searchExplorer('Cultural and Educational Rights')">
+                        <i class="fas fa-book-reader"></i>
+                        <span>Cultural and Educational Rights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explorer-results" style="display: none;"></div>
+</div>
