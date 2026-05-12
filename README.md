@@ -41,4 +41,3 @@ Then, open `frontend/index.html` in your browser.
 4. **History Management**: Supports deep-linking and browser navigation (back/forward) within the app.
 
 ---
-*Disclaimer: NomosIQ provides informational guidance and is not a substitute for professional legal advice.*
