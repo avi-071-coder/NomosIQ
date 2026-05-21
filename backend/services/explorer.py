@@ -1,11 +1,11 @@
-import google.generativeai as genai
+from google import genai
 import os
 import json
 
 api_key = os.getenv("GOOGLE_API_KEY")
+client = None
 if api_key:
-    genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-flash-latest')
+    client = genai.Client(api_key=api_key)
 
 async def search_legal_database(query, category=""):
     """Search legal database dynamically using AI for comprehensive coverage"""
@@ -67,7 +67,10 @@ async def search_legal_database(query, category=""):
     ]
     """
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-flash-latest',
+            contents=prompt
+        )
         text_response = response.text
         if '```json' in text_response:
             text_response = text_response.split('```json')[1].split('```')[0]

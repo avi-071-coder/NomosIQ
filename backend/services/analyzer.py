@@ -1,10 +1,9 @@
-import google.generativeai as genai
+from google import genai
 import os
 import requests
 import re
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel('gemini-flash-latest')
+client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 LEGAL_TERMS = {
     "bail": "Temporary release of accused with conditions",
@@ -61,7 +60,10 @@ async def analyze_document(input_data, url=None):
     }}
     """
     
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(
+        model='gemini-flash-latest',
+        contents=prompt
+    )
     # Simple JSON parsing (more robust)
     try:
         import json

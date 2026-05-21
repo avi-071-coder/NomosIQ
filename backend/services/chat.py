@@ -1,13 +1,13 @@
-import google.generativeai as genai
+from google import genai
 import os
 import json
 from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
+client = None
 if api_key:
-    genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-flash-latest')
+    client = genai.Client(api_key=api_key)
 
 BNS_SECTIONS = {
     "302": "Murder - punishment death/life imprisonment",
@@ -41,7 +41,10 @@ async def legal_chat(message, context=""):
     full_prompt = f"{system_prompt}\n\nContext: {context}\nUser: {message}"
     
     try:
-        response = model.generate_content(full_prompt)
+        response = client.models.generate_content(
+            model='gemini-flash-latest',
+            contents=full_prompt
+        )
         text_response = response.text
         # Clean up JSON formatting if present
         if '```json' in text_response:
