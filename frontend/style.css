@@ -38,7 +38,12 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 600;
 }
@@ -149,8 +154,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Typography & Hero */
@@ -184,7 +196,8 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(8px);
 }
 
-.feature-card:hover, .feature-card.active-card {
+.feature-card:hover,
+.feature-card.active-card {
     border-color: var(--accent-gold);
     box-shadow: 0 0 15px var(--accent-gold-glow);
     transform: translateY(-5px);
@@ -568,9 +581,29 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.tag-risk { background: rgba(220, 38, 38, 0.8); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
-.tag-ambiguous { background: rgba(245, 158, 11, 0.8); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
-.tag-clear { background: rgba(22, 163, 74, 0.8); color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem; }
+.tag-risk {
+    background: rgba(220, 38, 38, 0.8);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.tag-ambiguous {
+    background: rgba(245, 158, 11, 0.8);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.tag-clear {
+    background: rgba(22, 163, 74, 0.8);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
 
 /* Chat Container fixes */
 .chat-container {
@@ -653,28 +686,46 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.25rem 1.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .markdown-content p {
     margin-bottom: 1rem;
 }
+
 .markdown-content p:last-child {
     margin-bottom: 0;
 }
-.markdown-content ul, .markdown-content ol {
+
+.markdown-content ul,
+.markdown-content ol {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
 }
+
 .markdown-content li {
     margin-bottom: 0.5rem;
 }
 
-.loading, .empty-state { text-align: center; padding: 2rem; color: var(--text-secondary); }
-.error { color: #ef4444; background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: var(--radius-md); text-align: center; }
+.loading,
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+.error {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
 
 /* Remove history related UI */
-#sidebar { display: none !important; }
+#sidebar {
+    display: none !important;
+}
 
 /* Suggested Questions in Chat */
 .suggested-questions {
