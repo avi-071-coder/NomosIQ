@@ -791,3 +791,123 @@ h6 {
     border-color: var(--accent-gold);
     transform: translateX(-3px);
 }
+
+/* Responsive Design (Mobile & Tablet) */
+@media (max-width: 992px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .analyzer-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .nav-btn {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .panels-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .custom-toggles {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    
+    .toggle-item {
+        justify-content: space-between;
+    }
+    
+    .analyzer-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .chat-container {
+        height: 500px;
+    }
+    
+    .chat-messages {
+        padding: 1rem;
+    }
+    
+    .message.user, .message.bot {
+        max-width: 95%;
+    }
+    
+    .help-chat-widget {
+        bottom: 1rem !important;
+        right: 1rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+    
+    .analyzer-box, .overview-panel {
+        padding: 1rem;
+    }
+    
+    .clause-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chat-input {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .chat-input .btn {
+        width: 100%;
+    }
+    
+    .btn-dark {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
