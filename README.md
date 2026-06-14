@@ -7,11 +7,10 @@ NomosIQ is a professional legal platform designed to simplify complex Indian law
 - **LegalChat AI**: A 24/7 assistant that explains laws, sections, and procedures in simple English.
 - **Document Analyzer**: Upload or paste legal documents to get summaries, risk indicators, and actionable steps.
 - **Law Explorer**: Search and deep-link into specific BNS (Bharatiya Nyaya Sanhita) sections and Constitutional Articles.
-- **Premium Dark UI**: A high-end, focused aesthetic designed for clarity and professional use.
 
 ## Requirements
 - **Python 3.8+**
-- **Google Gemini API Key** (for AI features)
+- **Google Gemini API Key** 
 - **Dependencies**: Listed in `backend/requirements.txt`
 
 ## Getting Started
@@ -38,6 +37,5 @@ Then, open `frontend/index.html` in your browser.
 1. **Frontend**: A modern Single Page Application (SPA) built with Vanilla HTML/JS/CSS for maximum speed and smooth navigation.
 2. **Backend**: A FastAPI server that handles requests, document processing, and AI orchestration.
 3. **AI Engine**: Powered by Google Gemini (Flash) to provide high-speed, accurate legal analysis and conversation.
-4. **History Management**: Supports deep-linking and browser navigation (back/forward) within the app.
 
 ---
