@@ -34,6 +34,6 @@ python backend/app.py
 Then, open `frontend/index.html` in your browser.
 
 ## How It Works
-1. **Frontend**: A modern Single Page Application (SPA) built with Vanilla
+1. **Frontend**: A modern Single Page Application (SPA)
 
 
