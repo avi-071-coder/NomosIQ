@@ -36,6 +36,6 @@ Then, open `frontend/index.html` in your browser.
 ## How It Works
 1. **Frontend**: A modern Single Page Application (SPA) built with Vanilla HTML/JS/CSS for maximum speed and smooth navigation.
 2. **Backend**: A FastAPI server that handles requests, document processing, and AI orchestration.
-3. **AI Engine**: Powered by Google Gemini (Flash) to provide high-speed, accurate legal 
+3. **AI Engine**: Powered by Google Gemini (Flash) to provide high-speed, 
 
 
