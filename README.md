@@ -38,4 +38,4 @@ Then, open `frontend/index.html` in your browser.
 2. **Backend**: A FastAPI server that handles requests, document processing, and AI orchestration.
 3. **AI Engine**: Powered by Google Gemini (Flash) to provide high-speed, accurate legal analysis and conversation.
 
----
+
