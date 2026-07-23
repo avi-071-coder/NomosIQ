@@ -35,6 +35,5 @@ Then, open `frontend/index.html` in your browser.
 
 ## How It Works
 1. **Frontend**: A modern Single Page Application (SPA) built with Vanilla HTML/JS/CSS for maximum speed and smooth navigation.
-2. **Backend**:
 
 
