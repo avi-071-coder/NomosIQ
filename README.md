@@ -33,6 +33,5 @@ python backend/app.py
 ```
 Then, open `frontend/index.html` in your browser.
 
-## How It Works
 
 
